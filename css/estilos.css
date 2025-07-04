@@ -1,0 +1,1542 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Sora', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #a8d9c0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    
+}
+
+
+
+.container{
+    width: 90%;
+    max-width:1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    line-height:70px;
+    z-index: 1;
+}
+
+.btn-menu{
+    float: left;
+    line-height:70px;
+    padding-top:3px;
+    
+}
+
+.logo img{
+    line-height:120px;
+    width: 130px;
+    padding-top:25px;
+
+}
+
+.container .btn-menu label{
+    color: rgb(147, 52, 60)!important;
+    font-size:35px;
+    cursor: pointer;
+  
+}
+
+.menu{
+    
+    align-items: center;
+    line-height:15px;
+    padding-top: 5px;
+    display: flex;
+    color: rgb(74, 39, 181);
+    
+    
+}
+
+.cat{
+   display: flex;
+   gap: 15px;
+   list-style: none;
+}
+
+
+.cat li a{
+    text-decoration: none;
+    color: #0f703f;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+input{
+    width:170px;
+    margin:10px;
+    padding:10px 16px;
+    border-radius:32px;
+    outline:none;
+    border:1px solid #a5a4a4;
+    
+    
+}
+
+.botones-menu {
+   margin-left: 20%;
+   padding-top: 5px;
+   position: relative;
+   gap: 5px;
+   
+}
+
+.button-1 {
+    border: 2px solid #007874;
+    padding:12px 35px;
+    border-radius: 5px;
+    color: #007874;
+    text-decoration: none;
+   
+}
+
+.button-1:hover{
+    
+    padding:12px 35px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #007874;
+    transition: all 0.5s;
+}
+    
+
+.button-2 {
+    background: #007874;
+    padding:15px 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-2:hover{
+    
+    padding:15px 40px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #035552;
+    transition: all 0.5s;
+    
+    
+}
+
+.carrito{
+    border: 2px solid #007874;
+    padding:12px 10px;
+    border-radius: 5px;
+    color: #007874;
+    text-decoration: none;
+}
+
+.botones-menu img{
+    font-size: 80px;
+    cursor: pointer;
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU LATERAL*/
+#btn-menu{
+    display: none;
+    position: relative;
+    
+
+}
+
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 150px;
+    top: 0; left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+.cont-menu{
+    width: 100%;
+    max-width:250px;
+    background:#007874;
+    height: 70vh;
+    position: relative;
+    transition: all 500ms ease;
+    padding-top: 50px;
+    z-index: 10;
+}
+
+.cont-menu h3{
+    color: #fff;
+    margin-left: 5px;
+    padding-bottom: 2px;
+}
+.cont-menu nav{
+    transform: translate(1%);
+
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    margin-left: 15px;
+    color: #fff;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+
+
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background:#019792;
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BANNER SLIDER */
+
+.banner{
+    background-image: url(../imagenes/imagen\ 1\ png.png);
+    width: 100%;
+    height: 556px;
+    display: flex;
+    place-items: center;
+    position: relative;
+    line-height: 2;
+    z-index: -1000;
+}
+
+.content{
+    
+    color: #fff;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+}
+
+.content h1{
+    font-family: 'sora', bold;
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    max-width: 700px;
+    margin-left: 25%;
+
+}
+
+p{
+    margin-bottom: 5px;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+
+}
+
+
+button{
+    height: 60px;
+    width: 190px;
+    background-color: #FF5454;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* titulo novedades */
+.novedades h1{
+    margin-left: 5%;
+    margin-top: 45px;
+    font-weight: 1000;
+   font-style: italic;
+   background-color: #8dc3c1;
+   color: white;
+   margin:auto;
+   text-align: center;
+   font-family: 'sora', bold;
+   
+   
+      
+}
+
+
+/* bloques */
+
+.bloques{
+margin-top: 40px;
+padding-top: 10px!important;
+margin-left: 5%;
+width: 100%;
+height: 526px;
+gap: 25px!important;
+background-color: #8dc3c1;
+margin:auto;
+text-align: center;
+
+
+}
+
+
+.bloque-1{
+    border: 1px solid #a8d9c0;
+    width: 285px;
+    height: 427px;
+    
+    
+}
+
+
+
+.nuevo{
+    padding-top: 18px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    
+    
+}
+.heart{
+    
+    align-self: center;
+    padding: 2px 3px;
+    margin-left: 165px;
+    font-size: 25px;
+}
+
+
+.boton-nuevo{
+    background-color: #35b070;
+    border-radius: 3px;
+    color: rgb(27, 46, 44);
+    padding: 9px 10px;
+    text-decoration: none;
+    align-items: center;
+    
+
+}
+
+
+
+.piña{
+margin-top: 5px;
+text-align: center;
+
+}
+
+.producto-1{
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.producto-1 h3{
+    font-size: 18px;
+}
+.producto-1 p{
+    font-size: 14px;
+}
+
+
+.precio{
+    padding-left: 15px;
+    display: flex;
+
+}
+
+.producto button{
+
+    background-color: #019792;
+}
+
+.precio h4{
+    padding: 5px 3px;
+    float: left;
+    align-self: center;
+}
+.boton{
+    background-color: #007874;
+    border:none;
+    color: #fff;
+    margin-left: 70px;
+    padding: 12px 20px;
+    float: left;
+    margin-right: 11px;
+    text-decoration: none;
+    border-radius: 3px;
+    
+}
+.boton:hover{
+    background-color: #07a7a1;
+   transition: 0.5s;
+}
+
+
+
+
+.bloques{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.bloque-1:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#Platano de Seda {
+    background-color: lightblue; 
+    padding: 10px; 
+  }
+
+  .producto {
+    background-color: #ffeecc; 
+    border: 1px solid #e0e0e0; 
+    padding: 10px; 
+  }
+
+  
+
+
+
+
+
+
+
+
+/* banner 2*/
+.banner-2{
+    background-image: url(../imagenes/imagen\ 2.png);
+    width: 100%;
+    height: 300px;
+
+}
+
+.nuestras-categorias p{
+    font-size: 16px;
+    padding-top: 70px;
+    text-align: center;
+    color: #fff; 
+    font-family: 'sora', bold;
+}
+
+.nuestras-categorias h1{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: 'sora', bold;
+}
+
+
+.coleccion{
+    text-align: center;
+    height:200px;
+    width:1125px;
+    margin:0px auto;
+    background-color:#ffeecc;
+    box-shadow: 2px 2px 10px #666;
+    border-radius: 5px;
+    font-family: 'sora', bold;
+
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 30px;
+}
+
+.iconos a{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #007874;
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+
+
+
+/* container rojo*/
+.fondo-productos{
+    background-color: #FF5454;
+    height: 120px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-frescos{
+    padding: 30px 85px;
+    margin-left: 5%;
+    display: flex;
+    gap: 190px;
+    color: #fff;
+    
+    
+}
+
+.productos-frescos h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 29px;
+    
+    
+    
+}
+.productos-frescos p{
+    padding-top: 5px;
+    font-size: 16px;
+    
+}
+
+span{
+    font-weight: bolder;
+}
+
+
+
+
+/* container verde claro*/
+.fondo-productos-verde{
+    background-color: #06dad2;
+    height: 120px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-frescos-verde{
+    padding: 30px 85px;
+    margin-left: 5%;
+    display: flex;
+    gap: 190px;
+    color: #035552;
+    
+    
+}
+
+.productos-frescos h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 29px;
+    
+    
+    
+}
+.productos-frescos p{
+    padding-top: 5px;
+    font-size: 16px;
+    
+}
+
+span{
+    font-weight: bolder;
+}
+
+
+
+/* container verde oscuro*/
+.fondo-productos-verde-oscuro{
+    background-color: #035552;
+    height: 120px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-frescos-verde{
+    padding: 30px 85px;
+    margin-left: 5%;
+    display: flex;
+    gap: 190px;
+    color: #035552;
+    
+    
+}
+
+.productos-frescos h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 29px;
+    padding-top:5px;
+    
+    
+    
+}
+.productos-frescos p{
+    padding-top: 5px;
+    font-size: 16px;
+    
+}
+
+span{
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.objetivo{
+    display: flex;
+    padding: 25px 30px;
+}
+
+
+
+.hero{
+    margin-left: 3%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 400px;
+    align-items: center;
+}
+
+.hero img{
+    height: 45px;
+}
+.subtitulo{
+    margin-left: 20px;
+}
+
+.subtitulo p{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* registra tu emprendimiento*/
+.foodtrux{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'sora', bold;
+}
+
+.foodtrux p{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'sora', bold;
+    
+}
+
+.foodtrux h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+
+
+
+.registra{
+    background-color: #F5FFFF;
+    height:518px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+   
+}
+
+
+.panadero{
+    margin-left: 5%;
+    padding-top: 4%;
+}
+
+.emprendimiento{
+    max-width: 600px;
+    padding-top:85px;
+}
+
+.emprendimiento span{
+    font-size: 25px;
+    font-weight: 300;
+}
+.emprendimiento h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.emprendimiento p{
+    font-size: 23px;
+    padding-bottom: 80px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+/* cuadro gris*/
+.cuadro-gris {
+    background-color: #E5DFDF;
+    height:48px;
+    width:100%;
+}
+
+
+
+
+/* footer*/
+.footer {
+    background-color: #468583;
+    height: 369px;
+    width: 100%;
+    
+}
+
+
+
+.pie-pagina h2{
+    color: rgb(2, 56, 56);
+    font-weight: 900;
+    margin-left: 5%;
+    padding-top: 65px;
+    font-style: italic;
+    font-family: 'sora', bold;
+    
+}
+
+
+.pie-pagina ul li{
+    font-weight: 200;
+    padding-top: 15px;
+    list-style: none;
+    
+}
+
+.pie-pagina li{
+    color: white!important;
+    
+}
+
+.lista{
+    display:flex;
+    margin-left: 5%;
+    gap: 30px;
+   
+}
+
+.container-footer{
+    display: flex;
+    gap: 210px;
+    margin-left: 5%;
+    
+}
+
+
+.pie-pagina p{
+    color: #fff;
+    font-size:16px;
+    font-weight: 200;
+    max-width: 300px;
+    margin-left: 15px;
+    padding-top: 15px;
+    
+}
+
+.pie-pagina h4{
+    color: #fff;
+    font-size:16px;
+    font-weight: 200;
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+.redes{
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA DE FRUTAS*/
+
+.frutas{
+    padding-bottom: 180px;
+}
+.fondo-fruta{
+    background-image: url(../imagenes/frutas/fondo-frutas.png);
+    height:285px;
+    width: 100%;
+}
+.fondo-fruta h2{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 45%;
+	margin-top: -100px;
+	margin-left: -230px;
+    font-weight: 500;
+}
+
+.fondo-fruta p{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 35%;
+	margin-top: px;
+	margin-left: -230px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+.bloque-fruta{
+    margin-top: 50px;
+padding-top: 10px!important;
+margin-left: 6%;
+width: 100%;
+height: 526px;
+display: flex;
+gap: 39px;
+flex-wrap: wrap;
+padding-bottom: 80px;
+}
+.bloque-2{
+    border: 1px solid #d8d8d8;
+    height:375px;
+    width:266px;
+    text-align: center;
+}
+
+.bloque-2 a{
+    margin-left: 85px;
+}
+
+.bloque-2:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* PAGINA DE CARNES*/
+.carnes{
+    padding-bottom: 180px;
+}
+.fondo-carne{
+    background-image: url(..//imagenes/carnes/fondo-carnes.png);
+    height:285px;
+    width: 100%;
+}
+.fondo-carne h2{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 45%;
+	margin-top: -100px;
+	margin-left: -230px;
+    font-weight: 500;
+}
+
+.fondo-carne p{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 35%;
+	margin-top: px;
+	margin-left: -230px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+.bloque-carne{
+    margin-top: 50px;
+padding-top: 10px!important;
+margin-left: 6%;
+width: 100%;
+height: 526px;
+display: flex;
+gap: 39px;
+flex-wrap: wrap;
+padding-bottom: 80px;
+}
+.bloque-3{
+    border: 1px solid #d8d8d8;
+    height:375px;
+    width:266px;
+    text-align: center;
+}
+
+.bloque-3 a{
+    margin-left: 85px;
+}
+
+.bloque-3:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA DE VERDURAS*/
+.verduras{
+    padding-bottom: 180px;
+}
+.fondo-verduras{
+    background-image: url(../imagenes/verduras/fondo-verduras.png);
+    height:285px;
+    width: 100%;
+}
+.fondo-verduras h2{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 45%;
+	margin-top: -100px;
+	margin-left: -230px;
+    font-weight: 500;
+}
+
+.fondo-verduras p{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 35%;
+	margin-top: px;
+	margin-left: -230px;
+    font-weight: 300;
+}
+
+
+
+
+.bloque-verduras{
+    margin-top: 50px;
+padding-top: 10px!important;
+margin-left: 6%;
+width: 100%;
+height: 526px;
+display: flex;
+gap: 39px;
+flex-wrap: wrap;
+padding-bottom: 80px;
+}
+.bloque-4{
+    border: 1px solid #d8d8d8;
+    height:375px;
+    width:266px;
+    text-align: center;
+}
+
+.bloque-4 a{
+    margin-left: 85px;
+}
+
+.bloque-4:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA DE CONTACTO*/
+#registro{
+    background-color: #dfdfdf;
+    height: 100vh;
+    width: 100%;
+    padding-top: 45px;
+}
+
+.registro{
+    background-color: #fff;
+    width: 50%;
+    height: 580px;
+    border: 1px solid black;
+    border-radius: 18px;
+    margin: 0 auto;
+    
+}
+
+.formulario h3{
+    padding-top:25px;
+    margin-left: 35px;
+}
+
+
+.registrarse input {
+    margin-left: 55px;
+    width: 519px;
+    
+}
+
+.registrarse p{
+    margin-left: 55px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+input{
+    margin: 0px;
+    border-radius: 8px;
+}
+
+.telefono input{
+    width: 85px;
+    height:25px;
+   margin-top:15px;
+}
+
+.telefono{
+    display:flex;
+    
+    margin-left: 5px;
+}
+
+.telefono p{
+    padding-top:25px;
+}
+
+
+
+
+
+
+
+
+.boton-enviar{
+    padding-top: 25px;
+}
+
+.boton-enviar input{
+    cursor: pointer;
+    width:85px;
+}
+
+
+
+
+
+
+
+
+/* PAGINA DE registrate*/
+
+.header-registrate{
+   background-color: #ffffff;
+   height:85px;
+}
+.container-registrate{
+
+    width: 90%;
+    padding: 5px 8px;
+    max-width:1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    line-height:70px;
+    z-index: 1;
+    
+}
+.container-registrate .btn-menu label{
+    color: #FF5454!important;
+    font-size:35px;
+    cursor: pointer;
+  
+}
+
+.container-registrate a{
+    color: #035552;
+    text-decoration: none;
+   
+    
+  
+}
+.volver2{
+   margin-top: 10px;
+   margin-left: auto;
+   margin-right:auto;
+}
+
+.registrate-contenedor img{
+    width: 661px;
+    height: 705px;
+
+}
+
+.registrate-contenedor{
+    display: flex;
+}
+
+.pasos2{
+    margin: auto;
+    display: inline-block;
+    
+}
+
+.pasos2 h1{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.pasos2 a{
+    align-items: center;
+    display: block;
+}
+
+.button-3 {
+    background: #3B5998;
+    padding:15px 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.button-4 {
+    background: #176bef;
+    padding:15px 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.button-5 {
+    background: #2E2C36;
+    padding:15px 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.button-6 {
+    background: #e6ebf1;
+    padding:15px 40px;
+    border-radius: 5px;
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+}
+
+.formu input{
+    width: 300px;
+    display: block;
+    
+}
+
+.formu{
+    padding-top: 25px;
+}
+
+.medios{
+    display: flex;
+    gap: 58px;
+    padding-top: 25px;
+}
+
+.pregunta p{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 25px;
+    display: flex;
+    justify-content:center;
+    gap: 5px;
+    
+}
+
+.pregunta a{
+    text-decoration: none;
+    color: #035552;
+}
+
+
+.carro {
+ text-align: center;
+ padding-top: 250px;
+}
+
+
+
+
+
+
+/* PAGINA DE EMBUTIDOS*/
+.embutidos{
+    padding-bottom: 180px;
+}
+
+.fondo-embutidos{
+    background-image: url(..//imagenes/embutidos/fondo-embutidos.png);
+    height:285px;
+    width: 100%;
+}
+
+.fondo-embutidos h2{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 45%;
+	margin-top: -100px;
+	margin-left: -230px;
+    font-weight: 500;
+}
+
+.fondo-embutidos p{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 35%;
+	margin-top: px;
+	margin-left: -230px;
+    font-weight: 300;
+}
+
+
+.bloque-embutidos{
+    margin-top: 50px;
+padding-top: 10px!important;
+margin-left: 6%;
+width: 100%;
+height: 526px;
+display: flex;
+gap: 39px;
+flex-wrap: wrap;
+padding-bottom: 80px;
+}
+.bloque-5{
+    border: 1px solid #d8d8d8;
+    height:375px;
+    width:266px;
+    text-align: center;
+}
+
+.bloque-5 a{
+    margin-left: 85px;
+}
+
+.bloque-5:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* quienes somos*/
+.quienes-somos{
+    padding-bottom: 180px;
+}
+
+.fondo-nosotros{
+    background-image: url(../imagenes/nosotros/fondo-nosotros.png);
+    height:285px;
+    width: 100%;
+}
+
+.fondo-nosotros h2{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+	height: 150px;
+	width: 400px;
+	left: 50%;
+	top: 45%;
+	margin-top: -100px;
+	margin-left: -230px;
+    font-weight: 500;
+}
+
+.nosotros{
+    display:flex;
+    gap: 100px;
+    padding-top: 95px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.historia{
+    display:flex;
+    gap: 80px;
+    padding-top: 95px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.ver{
+    cursor:pointer;
+}
+
+
+.descripcion-nosotros p{
+padding-top: 40px;
+}
+
+.descripcion-nosotros h1{
+    color: #007874;
+}
